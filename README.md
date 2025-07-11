@@ -1,1 +1,1 @@
-# DevOps-Project-BankApp-CICD-using-GitLab-GoogleCloudPlatform-and-AWS
+# DevOps-Project-BankApp-CICD-using-GitLab-GCP-and-AWS
