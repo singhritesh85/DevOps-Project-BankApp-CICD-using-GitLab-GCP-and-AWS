@@ -184,6 +184,7 @@ resource "google_container_cluster" "gke_cluster" {
 resource "google_container_node_pool" "gke_linux_nodepool_1" {
   name       = "${var.prefix}-linux-nodepool-1"
   location   = var.gcp_region
+  node_locations = ["us-central1-a", "us-central1-c"]  ###data.google_compute_zones.available.names
   cluster    = google_container_cluster.gke_cluster.name
   version    = var.node_version
   initial_node_count = 2   ### Initial number of nodes to be created in the node pool.
